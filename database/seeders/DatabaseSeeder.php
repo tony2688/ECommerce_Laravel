@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
             ProductsTableSeeder::class,
             OrdersTableSeeder::class,
             PaymentsTableSeeder::class,
+            ShippingAddressesTableSeeder::class,
+            ReviewsTableSeeder::class,
+            WishlistsTableSeeder::class,
         ]);
     }
 }
