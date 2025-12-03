@@ -5,25 +5,26 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Faker\Factory as Faker;
 use Illuminate\Support\Str;
+use Faker\Factory as Faker;
 
-class CategoriesTableSeeder extends Seeder
+class BrandsTableSeeder extends Seeder
 {
+    use WithoutModelEvents;
+
     public function run(): void
     {
         $faker = Faker::create();
 
         $names = [
-            'Electrónica', 'Moda', 'Hogar', 'Deportes', 'Libros',
-            'Juguetes', 'Belleza', 'Salud', 'Oficina', 'Automotriz',
-            'Mascotas', 'Gourmet', 'Videojuegos', 'Música', 'Fotografía',
+            'Apple', 'Samsung', 'Sony', 'LG', 'Nike', 'Adidas', 'Puma',
+            'Dell', 'HP', 'Lenovo', 'Canon', 'Nikon', 'Bosch', 'Philips', 'Xiaomi',
         ];
 
-        foreach ($names as $i => $name) {
+        foreach ($names as $name) {
             $slug = Str::slug($name);
 
-            DB::table('categories')->updateOrInsert(
+            DB::table('brands')->updateOrInsert(
                 ['slug' => $slug],
                 [
                     'name' => $name,
