@@ -14,16 +14,18 @@ class UsersTableSeeder extends Seeder
         $faker = Faker::create();
 
         // ---------------------------
-        // 1) ADMIN
+        // 1) ADMIN (idempotente)
         // ---------------------------
-        User::create([
-            'name' => 'Administrador',
-            'email' => 'admin@example.com',
-            'password' => Hash::make('268801'),
-            'phone' => $faker->phoneNumber(),
-            'role' => 'admin',
-            'address' => $faker->address(),
-        ]);
+        User::firstOrCreate(
+            ['email' => 'admin@example.com'],
+            [
+                'name' => 'Administrador',
+                'password' => Hash::make('268801'),
+                'phone' => $faker->phoneNumber(),
+                'role' => 'admin',
+                'address' => $faker->address(),
+            ]
+        );
 
         // ---------------------------
         // 2) 40 Usuarios Comunes
