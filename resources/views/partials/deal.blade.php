@@ -59,7 +59,7 @@
                                 </div>
 
                                 <h4 class="item">Vendidos: <span>30 unidades</span></h4>
-                                <h4 class="offer">¡Apurate! La oferta termina en:</h4>
+                                <h4 class="offer">La oferta termina en:</h4>
 
                                 <!-- Timer -->
                                 <div class="timer" id="clockdiv-4" data-hours="1" data-minutes="2" data-seconds="3">

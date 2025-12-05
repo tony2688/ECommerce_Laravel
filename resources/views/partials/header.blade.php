@@ -85,43 +85,6 @@
                     </div>
 
                     <div class="rightside-menu">
-                        <div class="dropdown-dollar">
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button"
-                                        id="languageDropdown" data-bs-toggle="dropdown">
-                                    <span>Idioma</span>
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void(0)">Español</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void(0)">Inglés</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="dropdown">
-                                <button class="dropdown-toggle m-0" type="button"
-                                        id="currencyDropdown" data-bs-toggle="dropdown">
-                                    <span>Moneda</span>
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void(0)">ARS</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void(0)">USD</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void(0)">EUR</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
                         <div class="option-list">
                             <ul>
                                 <li>
@@ -250,7 +213,7 @@
                                  class="img-fluid"
                                  alt="Ofertas destacadas">
                         </div>
-                        <span>Ofertas destacadas</span>
+                        <span>Comprar Ahora</span>
                     </a>
                 </div>
             </div>
