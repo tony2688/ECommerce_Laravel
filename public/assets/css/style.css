@@ -1,4 +1,4 @@
-.theme-color-1 {
+﻿.theme-color-1 {
     --theme-color: #d99f46;
     --theme-color-rgb: 217, 159, 70
 }
@@ -21222,7 +21222,7 @@ footer .sub-footer ul li {
 }
 
 .footer-section-2 .main-footer {
-    padding-bottom: calc(18px + 32*(100vw - 320px)/1600);
+    padding-bottom: calc(0px + 32*(100vw - 320px)/1600);
     border-top: unset
 }
 
@@ -22787,12 +22787,14 @@ header .onhover-dropdown .onhover-div .cart-list li .drop-cart .drop-contain h6 
 
 header .onhover-dropdown .onhover-div .cart-list li .drop-cart .drop-contain .close-button {
     position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0);
+    top: 50%;
+    left: 250px;
+    /* ✅ Mueve la X más cerca del borde derecho */
+    background-color: transparent;
     border: none;
     padding: 0;
-    color: #4a5568
+    color: #4a5568;
+    transform: translateY(-50%);
 }
 
 [dir=rtl] header .onhover-dropdown .onhover-div .cart-list li .drop-cart .drop-contain .close-button {
@@ -47066,31 +47068,4 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
     padding-right: 0
 }
 
-/*boton para cerrar sesion*/
-.logout-button {
-    display: block;
-    width: 100%;
-    padding: 6px 12px;
-    margin-top: 6px;
-    background-color: #dc3545;
-    /* rojo tipo danger */
-    color: #ffffff;
-    border-radius: 4px;
-    border: 1px solid #dc3545;
-    font-size: 0.9rem;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.15s ease, border-color 0.15s ease;
-}
-
-.logout-button:hover {
-    background-color: #bb2d3b;
-    border-color: #bb2d3b;
-}
-
 /*# sourceMappingURL=style.css.map */
-/* Custom override-fix dropdown width */
-.onhover-div-login {
-    width: 250px !important;
-    min-width: 250px !important;
-}

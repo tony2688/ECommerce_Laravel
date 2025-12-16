@@ -75,6 +75,24 @@ class User extends Authenticatable
         return $this->hasMany(ShippingAddress::class);
     }
 
+    /* ===================== MÉTODOS AUXILIARES ===================== */
+
+    /**
+     * Verificar si el usuario ha comprado un producto específico
+     * 
+     * @param int $productId
+     * @return bool
+     */
+    public function hasPurchasedProduct($productId)
+    {
+        return $this->orders()
+            ->where('status', 'completed')
+            ->whereHas('items', function ($query) use ($productId) {
+                $query->where('product_id', $productId);
+            })
+            ->exists();
+    }
+
     /**
      * Send the password reset notification.
      */

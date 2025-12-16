@@ -4,27 +4,28 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
+use App\Models\Product;
 
-class Review extends Model
+class CartItem extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'user_id',
         'product_id',
-        'rating',
-        'comment',
+        'quantity',
     ];
 
     /* ===================== RELACIONES ===================== */
 
-    // Una reseña pertenece a un usuario
+    // Un item del carrito pertenece a un usuario
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    // Una reseña pertenece a un producto
+    // Un item del carrito pertenece a un producto
     public function product()
     {
         return $this->belongsTo(Product::class);

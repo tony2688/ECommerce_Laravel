@@ -253,30 +253,4 @@
             </div>
         </div>
     </div>
-
-    {{-- Franja inferior con teléfono y botón de ofertas --}}
-    <div class="container-fluid-lg">
-        <div class="row">
-            <div class="col-12">
-                <div class="main-nav">
-                    <div class="right-nav">
-                        <div class="nav-number">
-                            <img src="{{ asset('assets/images/icon/music.png') }}" class="img-fluid blur-up lazyload"
-                                alt="Ícono teléfono">
-                            <span>+54 381 123 4567</span>
-                        </div>
-
-                        <a href="javascript:void(0)" class="btn theme-bg-color ms-3 fire-button" data-bs-toggle="modal"
-                            data-bs-target="#deal-box">
-                            <div class="fire">
-                                <img src="{{ asset('assets/images/icon/hot-sale.png') }}" class="img-fluid"
-                                    alt="Ofertas destacadas">
-                            </div>
-                            <span>Comprar Ahora</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </header>

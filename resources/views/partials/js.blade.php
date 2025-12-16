@@ -22,17 +22,18 @@
 <!-- Ajuste automático de altura -->
 <script src="{{ asset('assets/js/auto-height.js') }}"></script>
 
-<!-- Control de cantidades en el carrito -->
-<script src="{{ asset('assets/js/quantity.js') }}"></script>
+{{-- Control de cantidades en el carrito --}}
+{{-- DESHABILITADO: Causaba duplicación con cart.js --}}
+{{--
+<script src="{{ asset('assets/js/quantity.js') }}"></script> --}}
 
-<!-- Contadores / temporizadores -->
-<script src="{{ asset('assets/js/timer1.js') }}"></script>
-<script src="{{ asset('assets/js/timer2.js') }}"></script>
-<script src="{{ asset('assets/js/timer3.js') }}"></script>
-<script src="{{ asset('assets/js/timer4.js') }}"></script>
-
-<!-- Efecto de carrito volador -->
-<script src="{{ asset('assets/js/fly-cart.js') }}"></script>
+<!-- Contadores / temporizadores (solo si existen en la página) -->
+@if(View::hasSection('has-timers') || request()->is('/'))
+    <script src="{{ asset('assets/js/timer1.js') }}"></script>
+    <script src="{{ asset('assets/js/timer2.js') }}"></script>
+    <script src="{{ asset('assets/js/timer3.js') }}"></script>
+    <script src="{{ asset('assets/js/timer4.js') }}"></script>
+@endif
 
 <!-- Animaciones al hacer scroll -->
 <script src="{{ asset('assets/js/wow.min.js') }}"></script>
@@ -40,6 +41,10 @@
 
 <!-- Lógica principal del template -->
 <script src="{{ asset('assets/js/script.js') }}"></script>
+
+<!-- Funcionalidad de Carrito y Lista de Deseos -->
+<script src="{{ asset('assets/js/wishlist.js') }}"></script>
+<script src="{{ asset('assets/js/cart.js') }}"></script>
 
 <!-- Configuración de tema (modo oscuro, colores, etc.) -->
 <script src="{{ asset('assets/js/theme-setting.js') }}"></script>

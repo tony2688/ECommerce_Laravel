@@ -2,14 +2,14 @@
 <html lang="es">
 
 <head>
-    <title>On-demand last-mile delivery</title>
+    <title>@yield('title', 'On-demand last-mile delivery')</title>
     @include('partials.head')
 </head>
 
 <body class="theme-color-2 bg-effect">
 
     <!-- Loader Start -->
-    @include('partials.loader') 
+    @include('partials.loader')
     <!-- Loader End -->
 
     <!-- Header Start -->
@@ -76,7 +76,8 @@
                     <div class="row g-sm-4 g-2">
                         <div class="col-lg-6">
                             <div class="slider-image">
-                                <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload" alt="">
+                                <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                    alt="">
                             </div>
                         </div>
 
@@ -150,9 +151,11 @@
                                 </div>
 
                                 <div class="modal-button">
-                                    <button onclick="location.href = 'cart.html';" class="btn btn-md add-cart-button icon">Add
+                                    <button onclick="location.href = 'cart.html';"
+                                        class="btn btn-md add-cart-button icon">Add
                                         To Cart</button>
-                                    <button onclick="location.href = 'product-left.html';" class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
+                                    <button onclick="location.href = 'product-left.html';"
+                                        class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
                                         View More Details</button>
                                 </div>
                             </div>
@@ -283,7 +286,8 @@
                             <li class="list-1">
                                 <div class="deal-offer-contain">
                                     <a href="shop-left-sidebar.html" class="deal-image">
-                                        <img src="../assets/images/vegetable/product/10.png" class="blur-up lazyload" alt="">
+                                        <img src="../assets/images/vegetable/product/10.png" class="blur-up lazyload"
+                                            alt="">
                                     </a>
 
                                     <a href="shop-left-sidebar.html" class="deal-contain">
@@ -296,7 +300,8 @@
                             <li class="list-2">
                                 <div class="deal-offer-contain">
                                     <a href="shop-left-sidebar.html" class="deal-image">
-                                        <img src="../assets/images/vegetable/product/11.png" class="blur-up lazyload" alt="">
+                                        <img src="../assets/images/vegetable/product/11.png" class="blur-up lazyload"
+                                            alt="">
                                     </a>
 
                                     <a href="shop-left-sidebar.html" class="deal-contain">
@@ -309,7 +314,8 @@
                             <li class="list-3">
                                 <div class="deal-offer-contain">
                                     <a href="shop-left-sidebar.html" class="deal-image">
-                                        <img src="../assets/images/vegetable/product/12.png" class="blur-up lazyload" alt="">
+                                        <img src="../assets/images/vegetable/product/12.png" class="blur-up lazyload"
+                                            alt="">
                                     </a>
 
                                     <a href="shop-left-sidebar.html" class="deal-contain">
@@ -322,7 +328,8 @@
                             <li class="list-1">
                                 <div class="deal-offer-contain">
                                     <a href="shop-left-sidebar.html" class="deal-image">
-                                        <img src="../assets/images/vegetable/product/13.png" class="blur-up lazyload" alt="">
+                                        <img src="../assets/images/vegetable/product/13.png" class="blur-up lazyload"
+                                            alt="">
                                     </a>
 
                                     <a href="shop-left-sidebar.html" class="deal-contain">
@@ -403,7 +410,8 @@
                             <div class="theme-setting-button color-picker">
                                 <form class="form-control">
                                     <label for="colorPick" class="form-label mb-0">Theme Color</label>
-                                    <input type="color" class="form-control form-control-color" id="colorPick" value="#0da487" title="Choose your color">
+                                    <input type="color" class="form-control form-control-color" id="colorPick"
+                                        value="#0da487" title="Choose your color">
                                 </form>
                             </div>
                         </li>
